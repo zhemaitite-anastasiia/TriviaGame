@@ -8,52 +8,48 @@ $(document).on("click", "#submit", function(){
 
 // questions array
 var questions = [{
-  question: "In which 20th-century decade was Barbie's boyfriend Ken first made?", 
-  answers: ["1920s", "1960s", "1930s", "1940s"],
-  correctAnswer: "1960s"
+  question: "Which country did the gingerbread house comes from?", 
+  answers: ["Germany   ", "USA   ", "Netherlands   ", "Austria"],
+  correctAnswer: "Germany"
   }, {
-  question: "In which decade was Madonna born?", 
-  answers: ["1920s", "1960s", "1950s", "1940s"],
-  correctAnswer: "1950s"
+  question: "What is the most famous Christmas Ballet?", 
+  answers: ["Giselle", "The Sleeping Beauty", "The Nutcracker", "Cinderella"],
+  correctAnswer: "The Nutcracker"
   }, {
-  question: "Who plays against the USA in golf's Walker Cup?", 
-  answers: ["Germany", "Spain", "Mexico", "Great Britain"], 
-  correctAnswer: "Great Britain"
+  question: "Who wrote How the Grinch Stole Christmas?", 
+  answers: ["Jack London", "Ernest Hemingway", "Mark Twain", "Dr. Suess"], 
+  correctAnswer: "Dr. Suess"
   }, {
-  question: "What does the F stand for in FBI?",
-  answers: ["French", "Federal", "Fantastic", "Fine"],
-  correctAnswer: "Federal"
+  question: "What is the most popular Christmas dish?",
+  answers: ["Fully loaded Sweet Potatoe", "Roasted Pork Loin", "Chocolate Eggnog ", "Macaroni and Cheese"],
+  correctAnswer: "Chocolate Eggnog"
   }, {
-  question: "Which actor is the dad of Jamie Lee Curtis?", 
-  answers: ["Tony Curtis", "Frank Curtis", "Michael Lee Curtis", "Mark Curtis"],
-  correctAnswer: "Tony Curtis"
+  question: "Top rated holiday movie?", 
+  answers: ["Bad Santa", "Elf", "A Christmas Story", "Home Alone"],
+  correctAnswer: "Elf"
   }, {
-  question: "In football, where do the Chargers come from?", 
-  answers: ["San Diego", "San Fransico", "Dallas", "New York"],
-  correctAnswer: "San Diego"
+  question: "Traditionally, kids leave out snacks for Santa Claus. What are these snacks?", 
+  answers: ["Cookies and milk", "jam sandwich cookies", "fudge", "meringues"],
+  correctAnswer: "Cookies and milk"
   }, {
-  question: "The cause of what color fever was discovered in 1900?",
-  answers: ["Red", "Green", "Yellow", "Blue"],
-  correctAnswer: "Yellow"
+  question: "Which was the last state in the United States that declaired Christmas as legal holiday?",
+  answers: ["Illinois", "Alaska", "Oklahoma", "Maryland"],
+  correctAnswer: "Oklahoma"
   }, {
-  question: "Where do the Super Bowl winning Cowboys come from?",
-  answers: ["Austin", "Dallas", "San Diego", "New York"],
-  correctAnswer: "Dallas"
+  question: "When does Russian Orthodox Church celebrate Christmas?",
+  answers: ["January 7th ", "January 6th", "January 14th", "December 24th"],
+  correctAnswer: "January 7th"
   }, {
-  question: "The US declared war on which country after the bombing of Pearl Harbor?",
-  answers: ["North Korea", "Germany", "Japan", "China"],
-  correctAnswer: "Japan"
-  }, {
-  question: "Which state is called the volunteer State?", 
-  answers: ["Texas", "North Carolina", "Tennessee", "Alabama"],
-  correctAnswer: "Tennessee"
-  }
+  question: "Who was the star of the Christmas movie Jingle All the Way?",
+  answers: ["Leonardo DiCaprio", "Arnold Schwarznegger", "Anthony Hopkins", "Al Pacino"],
+  correctAnswer: "Arnold Schwarznegger"
+  }, 
   ];
 
   var play = {
     correct: 0,
     incorrect: 0,
-    counter: 25,
+    counter: 45,
     countdown: function() {
       play.counter--;
       $("#counter").html(play.counter);
