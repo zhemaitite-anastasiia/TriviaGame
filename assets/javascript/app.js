@@ -6,42 +6,42 @@ $(document).on("click", "#submit", function(){
   play.done();
 })
 
-// questions array
+// questions 
 var questions = [{
   question: "Which country did the gingerbread house comes from?", 
   answers: ["Germany   ", "USA   ", "Netherlands   ", "Austria"],
   correctAnswer: "Germany"
   }, {
   question: "What is the most famous Christmas Ballet?", 
-  answers: ["Giselle", "The Sleeping Beauty", "The Nutcracker", "Cinderella"],
+  answers: ["Giselle   ", "The Sleeping Beauty   ", "The Nutcracker   ", "Cinderella"],
   correctAnswer: "The Nutcracker"
   }, {
   question: "Who wrote How the Grinch Stole Christmas?", 
-  answers: ["Jack London", "Ernest Hemingway", "Mark Twain", "Dr. Suess"], 
+  answers: ["Jack London   ", "Ernest Hemingway   ", "Mark Twain   ", "Dr. Suess"], 
   correctAnswer: "Dr. Suess"
   }, {
   question: "What is the most popular Christmas dish?",
-  answers: ["Fully loaded Sweet Potatoe", "Roasted Pork Loin", "Chocolate Eggnog ", "Macaroni and Cheese"],
+  answers: ["Fully loaded Sweet Potatoe   ", "Roasted Pork Loin   ", "Chocolate Eggnog   ", "Macaroni and Cheese"],
   correctAnswer: "Chocolate Eggnog"
   }, {
   question: "Top rated holiday movie?", 
-  answers: ["Bad Santa", "Elf", "A Christmas Story", "Home Alone"],
+  answers: ["Bad Santa   ", "Elf   ", "A Christmas Story   ", "Home Alone"],
   correctAnswer: "Elf"
   }, {
   question: "Traditionally, kids leave out snacks for Santa Claus. What are these snacks?", 
-  answers: ["Cookies and milk", "jam sandwich cookies", "fudge", "meringues"],
+  answers: ["Cookies and milk   ", "jam sandwich cookies   ", "fudge   ", "meringues"],
   correctAnswer: "Cookies and milk"
   }, {
   question: "Which was the last state in the United States that declaired Christmas as legal holiday?",
-  answers: ["Illinois", "Alaska", "Oklahoma", "Maryland"],
+  answers: ["Illinois   ", "Alaska"  , "Oklahoma   ", "Maryland"],
   correctAnswer: "Oklahoma"
   }, {
   question: "When does Russian Orthodox Church celebrate Christmas?",
-  answers: ["January 7th ", "January 6th", "January 14th", "December 24th"],
+  answers: ["January 7th   ", "January 6th   ", "January 14th   ", "December 24th"],
   correctAnswer: "January 7th"
   }, {
   question: "Who was the star of the Christmas movie Jingle All the Way?",
-  answers: ["Leonardo DiCaprio", "Arnold Schwarznegger", "Anthony Hopkins", "Al Pacino"],
+  answers: ["Leonardo DiCaprio   ", "Arnold Schwarznegger   ", "Anthony Hopkins   ", "Al Pacino"],
   correctAnswer: "Arnold Schwarznegger"
   }, 
   ];
@@ -60,7 +60,7 @@ var questions = [{
     },
     start: function() {
       timer = setInterval(play.countdown, 1000);
-      $("#subWrapper").prepend("<h2>Time Remaining: <span id='counter'>25</span> Seconds</h2>");
+      $("#subWrapper").prepend("<h2>Time Remaining: <span id='counter'>45</span> Seconds</h2>");
         $("#startButton").remove();
     for (var i=0; i < questions.length; i++) {
       $("#subWrapper").append("<h2>"+questions[i].question+"</h2>");
@@ -149,6 +149,6 @@ var questions = [{
         $("#subWrapper").html("<h2>Finished!!!!!!</h2>");
         $("#subWrapper").append("<h3>Correct Answers: "+this.correct+"</h3>");
         $("#subWrapper").append("<h3>Incorrect Answers: "+this.incorrect+"</h3>");
-        $("#subWrapper").append("<h3>Questions You Forgot: "+(questions.length-(this.correct+this.incorrect))+"</h3>");
+        $("#subWrapper").append("<h3>Questions You Forgot to Answer: "+(questions.length-(this.correct+this.incorrect))+"</h3>");
           }
     };
